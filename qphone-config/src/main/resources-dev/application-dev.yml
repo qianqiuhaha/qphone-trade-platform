@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    include:
+      - datasource
+      - mybatis
+      - druid
+      - jackson
+      - nacos
+      - log
+      - feign

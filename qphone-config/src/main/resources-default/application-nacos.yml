@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+#        配置中心地址
+        server-addr: 119.91.198.37:8848
+#         同步服务的地址频率
+        watch-delay: 5000
+        #       心跳超时
+        heart-beat-timeout: 10000
+        ip-delete-timeout: 20000
+
+
+
+

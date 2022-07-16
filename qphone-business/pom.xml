@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>qphone-trade-platform</artifactId>
+        <groupId>com.qf</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>qphone-business</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>qphone-business-classes</module>
+        <module>qphone-business-system</module>
+        <module>qphone-business-student</module>
+        <module>qphone-business-user</module>
+        <module>qphone-business-good</module>
+    </modules>
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>org.springframework.boot</groupId>-->
+<!--                    <artifactId>spring-boot-starter-logging</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.qf</groupId>
+            <artifactId>qphone-commons-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.qf</groupId>
+            <artifactId>qphone-commons-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.qf</groupId>
+            <artifactId>qphone-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.qf</groupId>
+            <artifactId>qphone-commons-mybatis</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

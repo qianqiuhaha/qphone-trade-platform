@@ -1,0 +1,19 @@
+feign:
+  httpclient:
+    enabled: false
+  okhttp:
+    #启动底层的通讯框架为okhttp
+    enabled: true
+  #feign和sentinel整合
+  sentinel:
+    enabled: true
+  client:
+    config:
+      #配置默认的连接超时 和 读超时
+      default:
+        connectTimeout: 1000
+        readTimeout: 1000
+      #给指定的微服务配置超时时间
+      student-server:
+        connectTimeout: 1000
+        readTimeout: 1000

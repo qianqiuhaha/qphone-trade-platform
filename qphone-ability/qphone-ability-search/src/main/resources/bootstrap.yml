@@ -1,0 +1,13 @@
+server:
+  port: 9011
+spring:
+  application:
+
+    name: search-server
+  profiles:
+
+    active: "@runtime-profile@"
+  cloud:
+    nacos:
+      config:
+        server-addr: @config-addr@

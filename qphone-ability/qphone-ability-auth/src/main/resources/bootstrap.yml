@@ -1,0 +1,28 @@
+#server:
+#  port: 9004
+#spring:
+#  application:
+#    name: auth-server
+#  profiles:
+#    #运行环境
+#    active: @runtime-profile@
+#  cloud:
+#    nacos:
+#      config:
+#        #统一配置中心的地址
+#        server-addr: @config-addr@
+#        #直接读取想要的配置文件
+#        #extension-configs:
+server:
+  port: 9004
+spring:
+  application:
+
+    name: auth-server
+  profiles:
+
+    active: "@runtime-profile@"
+  cloud:
+    nacos:
+      config:
+        server-addr: @config-addr@

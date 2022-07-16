@@ -1,0 +1,10 @@
+kenplugin:
+  page:
+    webconfig:
+      enable: true
+  execsql:
+    enable: true
+  auto:
+    mapping:
+      #开启结果的自动映射
+      enable: true

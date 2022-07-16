@@ -1,0 +1,11 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: classes-server
+  profiles:
+    active: "@runtime-profile@"
+  cloud:
+    nacos:
+      discovery:
+        server-addr: "@config-addr@"

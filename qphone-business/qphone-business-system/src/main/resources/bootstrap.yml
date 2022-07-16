@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+
+    name: system-server
+  profiles:
+
+    active: "@runtime-profile@"
+  cloud:
+    nacos:
+      config:
+        server-addr: @config-addr@

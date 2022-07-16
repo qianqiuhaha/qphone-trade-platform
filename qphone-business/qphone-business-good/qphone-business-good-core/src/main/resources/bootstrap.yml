@@ -1,0 +1,15 @@
+server:
+  port: 9007
+spring:
+  application:
+    name: goods-core
+  profiles:
+    active: @runtime-profile@
+  cloud:
+    nacos:
+      config:
+
+        server-addr: @config-addr@
+        extension-configs:
+          - data-id: gateway-server.yml
+            refresh: true

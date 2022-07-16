@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.qf.commons.core.config.CoreAutoConfiguration
+org.springframework.context.ApplicationListener=\
+com.qf.commons.core.listener.SpringEnviromentListener
