@@ -4,6 +4,7 @@ import com.qf.data.base.r.R;
 import com.qf.data.user.entity.User;
 import com.qf.data.user.vo.input.WxUserInput;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -11,6 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @FeignClient("user-server")
 public interface UserFeign {
-    @RequestMapping("user/wx/query")
+    @PostMapping("user/wx/query")
     R<User> wxUserQuery(WxUserInput wxUserInput);
 }

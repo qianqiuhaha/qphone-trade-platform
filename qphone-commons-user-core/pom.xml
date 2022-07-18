@@ -9,16 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>qphone-commons</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>qphone-commons-core</module>
-        <module>qphone-comons-mybatis</module>
-        <module>qphone-commons-sentinel</module>
-        <module>qphone-commons-web</module>
-        <module>qphone-commons-standar</module>
-        <module>qphone-commons-user</module>
-    </modules>
+    <artifactId>qphone-commons-user-core</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

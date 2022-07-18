@@ -245,6 +245,12 @@
                 <version>${qphone.version}</version>
             </dependency>
 
+<!--            jwt防篡改令牌的统一管理-->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

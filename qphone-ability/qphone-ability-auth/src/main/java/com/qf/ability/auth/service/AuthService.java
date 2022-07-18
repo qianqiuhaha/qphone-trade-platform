@@ -1,5 +1,6 @@
 package com.qf.ability.auth.service;
 
+import com.qf.data.auth.vo.input.WxAuthUserInput;
 import com.qf.data.base.r.R;
 import com.qf.data.user.vo.input.WxUserInput;
 
@@ -8,5 +9,5 @@ import com.qf.data.user.vo.input.WxUserInput;
  */
 public interface AuthService{
     //认证服务进行用户认证服务的登录判断
-    public void wxLogin(WxUserInput wxUserInput);
+    public void wxLogin(WxAuthUserInput wxAuthUserInput);
 }
